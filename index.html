@@ -1,0 +1,42 @@
+<head>
+    <title>
+        Temperature Converter
+    </title>
+    <script type="text/javascript" src="js\script.js"></script>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <div id="mid">
+        <div id="bg">
+            <h1>Temperature Converter</h1>
+
+            <p id="text">Welcome! This is a website that can change between temperatures. To use, start by changing the values below.</p>
+
+            <div class="flex-container-row" id="converter">
+
+                <input id="temp1" onchange="convert('t1')">°
+                <select id="ch1" onchange="convert('ch1')">
+                    <option value="F">F</option>
+                    <option value="C" selected>C</option>
+                    <option value="K">K</option>
+                </select>
+                is equal to
+                <input id="temp2" onchange="convert('t2')">°
+                <select id="ch2" onchange="convert('ch2')">
+                    <option value="F" selected>F</option>
+                    <option value="C">C</option>
+                    <option value="K">K</option>
+                </select>
+
+            </div> 
+        
+            <div class="flex-container-column">
+                <h2>Formula</h2>
+                <p id="formula-display">‎ </p>
+            </div>
+
+        </div>
+    </div>
+    <br>    
+</body>

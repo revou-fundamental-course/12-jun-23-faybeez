@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+body{
+    margin: 20vh 0 0 0;
+    
+    font-family: 'PT Sans', sans-serif;
+    color: #392F5A;
+
+    background-color: #392F5A;
+}
+
+#mid {
+    display: flex;
+    justify-content: center;
+}
+
+#bg {
+    overflow: hidden;
+    width: fit-content;
+    
+
+    margin: 0;
+    padding: 50px;
+
+    background-color: #F4D06F;
+
+    border-radius: 40px;
+    border: 10px groove #d8ad35;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 5vh;
+    margin-bottom: 10px;
+}
+
+#text {
+    text-align: center;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+h2 {
+    margin-bottom: 3px;
+}
+
+p {
+    margin-top: 0;
+    font-size: 2vh;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#converter {
+    font-size: 3vh;
+    font-weight: 400;
+}
+
+input {
+    height: 8vh;
+    width: 12vh;
+    text-align: center;
+    font-size: 3vh;
+    margin: 0 5px 0 20px;
+
+    border: 0px;
+    border-radius: 20px;
+
+    background-color: #fad87c;
+    box-shadow: 0 0 10px #d0a537;
+}
+
+input:hover {
+    box-shadow: 0 0 10px #d0a537 inset;
+
+}
+input:focus {
+    background-color: #e0b64d;
+}
+
+select {
+    font-size: 3vh;
+
+    margin: 0 20px 0 0;
+    padding: 5px;
+
+    border: 0px;
+    border-radius: 15px;
+    background-color: #FFF8F0;
+}
+
+select:hover {
+    border-radius: 15px;
+    background-color: #FFF8F0;
+    
+
+    box-shadow: 0 0 5px #a98d46 inset;
+}
